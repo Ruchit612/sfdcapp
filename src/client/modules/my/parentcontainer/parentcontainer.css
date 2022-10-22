@@ -1,0 +1,9 @@
+.sub-header{
+    font-family: Roboto;
+    font-size: large;
+    padding-left: 2%;
+    height: 20px;
+    width: 100%;
+    background: linear-gradient(to left, white 0%, #4dffc3 100%);
+
+}

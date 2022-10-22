@@ -1,0 +1,42 @@
+<template>
+    <div class="slds-theme_default main-header">
+        <div class="slds-grid">
+            <div class="slds-col slds-size_6-of-12">
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_2-of-12 slds-medium-size_1-of-12 slds-large-size_1-of-12 margin-screen">
+                        <img src="./resources/logo_2.png" class="slds-float_right logo-style" style="height: 50px;" loading="lazy"/>
+                    </div>
+                    <div class="slds-col slds-size_10-of-12 slds-medium-size_11-of-12 slds-large-size_11-of-12 slds-m-top_x-small slds-m-left_x-small">
+                        <span class="site-title">Salesforce Spidey</span>
+                    </div>
+                </div>    
+            </div>
+            <template if:true={mobileview}>
+            <div class="slds-col slds-size_6-of-12">
+                <div class="responsive slds-grid slds-align_absolute-center grid-height">
+                    <div class="slds-col slds-size_1-of-5">
+
+                    </div>
+                    <div class="slds-col slds-size_1-of-5">
+                        <span class="link-style">Home</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-5">
+                        <span class="link-style">Aura</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-5">
+                        <span class="link-style">LWC</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-5">
+                        <span class="link-style">About Me</span>
+                    </div>
+                </div>
+            </div>
+            </template>
+            <template if:false={mobileview}>
+                <div class="slds-col slds-size_6-of-12 slds-float_right grid-height">
+                        <span class="icon-back"><lightning-icon icon-name="utility:tile_card_list" alternative-text="Mobile View" title="Mobile view" class="slds-float_right icon-style" size="large" variant="inverse"></lightning-icon></span>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

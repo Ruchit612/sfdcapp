@@ -1,0 +1,34 @@
+.site-title{
+    font-family: "Sofia", sans-serif;
+    text-shadow: 3px 3px 3px #ababab;
+    font-size: x-large;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 427px) {
+    .logo-style{
+        width: 50px;
+    }
+    .margin-screen{
+        margin-top: 20px;
+    }
+    .grid-height{
+        height: 82px !important;
+    }
+    .icon-style{
+        margin-top: 14px !important;
+    }
+  }
+.grid-height{
+    height: 55px;
+    background-color: #00cc99;
+}
+.link-style{
+    font-family: emoji;
+    font-size: x-large;
+    text-shadow: 3px 3px 3px #1d1c1c;
+    color: white;
+}
+.icon-style{
+    border-style: outset;
+}
+
