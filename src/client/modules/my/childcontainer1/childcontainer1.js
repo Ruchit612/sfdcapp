@@ -1,11 +1,18 @@
 import { LightningElement, track } from 'lwc';
 import * as jq from 'jquery';
+import * as cs from 'slick-carousel';
 export default class ChildContainer1 extends LightningElement {
     
     renderedCallback() {
         if (jq) {
             console.log("jquery is loaded");
         } else {
+            console.log("Not loaded");
+        }
+        if(cs){
+            console.log("caraousal is loaded");
+        }
+        else{
             console.log("Not loaded");
         }
     }
