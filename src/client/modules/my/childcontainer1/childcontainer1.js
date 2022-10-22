@@ -1,6 +1,14 @@
 import { LightningElement, track } from 'lwc';
+import * as jq from 'jquery';
 export default class ChildContainer1 extends LightningElement {
     
+    renderedCallback() {
+        if (jq) {
+            console.log("jquery is loaded");
+        } else {
+            console.log("Not loaded");
+        }
+    }
     startIndex=0;
     @track card = [
         {
