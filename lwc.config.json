@@ -8,6 +8,9 @@
         },
         {
             "npm": "jquery"
+        },
+        {
+            "npm": "slick-carousel"
         }
     ]
 }
