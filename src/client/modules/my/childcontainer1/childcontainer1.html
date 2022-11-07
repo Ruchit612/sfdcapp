@@ -1,7 +1,7 @@
 <template>
     <div class="slds-grid slds-gutters">
         <div class="slds-col slds-size_1-of-12">
-            <div class="arrow-box-right">
+            <div class="arrow-box-right slds-border_top slds-border_bottom slds-border_right">
                 <template if:true={leftVariants}>
                 <lightning-icon icon-name="utility:left" alternative-text="Left" title="Left" variant="warning" onclick={handleLeft}></lightning-icon>
                 </template>
@@ -11,14 +11,17 @@
             </div>
         </div>
         <template for:each={updatedCard} for:item="ca">
-            <div class="slds-col slds-size_2-of-12" key={ca.label} style="overflow-x: hidden;">
-                <div class="box-style" data-id={ca.id}>
-                    {ca.label}
+            <div class="box-style slds-col slds-size_2-of-12" key={ca.label}>
+                <div class="box-style1 slds-border_top slds-border_right slds-border_left" data-id={ca.id}>
+                    <img src = "resources/assets/images/carousel/spa.jpeg" alt="spa">
+                </div>
+                <div class="box-style2 slds-border_bottom slds-border_right slds-border_left">     
+                    
                 </div>
             </div>
         </template>
        <div class="slds-col slds-size_1-of-12">
-            <div class="arrow-box-left">
+            <div class="arrow-box-left slds-border_top slds-border_bottom slds-border_left">
                 <template if:true={rightVariants}>
                 <lightning-icon icon-name="utility:right" alternative-text="Right" title="Right" variant="warning" onclick={handleRight}></lightning-icon>
                 </template>
